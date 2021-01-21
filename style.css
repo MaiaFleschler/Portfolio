@@ -96,7 +96,6 @@ a{
 }
 .button{
     background-color: #F03667;
-    color: white;
     padding: 15px 40px;
     border-radius: 100px;
     font-weight: 500;
@@ -104,7 +103,7 @@ a{
 .conocimientos{
     background-color: #f6f7fb;
 }
-h2{
+.tituloConoc{
     font-size: 45px;
     font-weight: 900;
 }
@@ -121,5 +120,21 @@ h2{
     height: 215px;
     margin-top: 20px;
     
+}
+.seccionFrase{
+    background-color: #F03667;
+}
+.fraseIcono{
+    color: white;
+    margin-bottom: 20px;
+}
+.frase{
+    max-width: 800px;
+    line-height: 1.4;
+    text-align: center;
+}
+.autorFrase{
+    font-size: 27px;
+    font-weight: 900;
 }
 
