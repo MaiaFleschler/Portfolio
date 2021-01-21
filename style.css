@@ -23,6 +23,20 @@ section{
 .letraColor{
     color: #F03667;
 }
+.cajaColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.cajaFila{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
 header{
     position: fixed;
     top: 0;
@@ -53,12 +67,6 @@ li{
 }
 a{
     text-decoration: none;
-}
-.presentacion{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 .sobreMi{
     width: 100%;
@@ -93,3 +101,25 @@ a{
     border-radius: 100px;
     font-weight: 500;
 }
+.conocimientos{
+    background-color: #f6f7fb;
+}
+h2{
+    font-size: 45px;
+    font-weight: 900;
+}
+.cards{
+    flex-wrap: wrap;
+    width: 820px;
+}
+.itemConocimientos{
+    color: #2e2e31;
+    background-color: #fff;
+    border: 1px solid #dddfe5;
+    border-radius: 8px;
+    width: 260px;
+    height: 215px;
+    margin-top: 20px;
+    
+}
+
