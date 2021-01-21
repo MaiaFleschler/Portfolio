@@ -103,7 +103,7 @@ a{
 .conocimientos{
     background-color: #f6f7fb;
 }
-.tituloConoc{
+.titulo{
     font-size: 45px;
     font-weight: 900;
 }
@@ -136,5 +136,17 @@ a{
 .autorFrase{
     font-size: 27px;
     font-weight: 900;
+}
+.cardsProyectos{
+    flex-wrap: wrap;
+    width: 1070px;
+}
+.itemProyecto{
+    width: 340px;
+    height: 350px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-top: 20px;
+
 }
 
