@@ -5,6 +5,15 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+.columnaPrincipal{
+    width: 100%;
+    max-width: 1100px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    padding: 110px 40px 130px;
+}
 .letraNegra{
     color: black;
 }
@@ -12,7 +21,7 @@
     color: white;
 }
 .letraColor{
-    color: palevioletred;
+    color: #F03667;
 }
 header{
     position: fixed;
@@ -24,7 +33,10 @@ header{
 }
 nav{
     margin-top: 30px;
-    margin-right: 150px;
+    margin-right: 130px;
+    
+    
+
 
 }
 ul{
@@ -33,6 +45,7 @@ ul{
     justify-content: flex-end;
     height: 40px;
     list-style: none;
+    
 }
 li{
     margin-right: 30px;
@@ -40,4 +53,43 @@ li{
 }
 a{
     text-decoration: none;
+}
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobreMi{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+.hola{
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+.miNombre{
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.miDescripcion{
+    color: #616161;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.sobreMiImg{
+    width: 500px;
+}
+.button{
+    background-color: #F03667;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 100px;
+    font-weight: 500;
 }
