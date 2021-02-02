@@ -41,39 +41,34 @@ a{
 header{
     position: fixed;
     top: 0;
-    width: 100vw;
-    height: 90px;
+    left: 0;
+    width: 100%;
     background-color:#FFFF;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
 
 }
-nav{
-    margin-top: 25px;
-    margin-right: 130px;
-    
-    
-}
 nav ul{
     display: flex;
     flex-direction: row;
+    width: 90%;
     justify-content: flex-end;
-    height: 40px;
     list-style: none;
     align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    
    
 }
-nav li{
-    margin: 0 10px;
-
-}
-nav li a{
-    padding: 10px;
+nav ul a{
+    margin-left: 1.2rem;
+    padding: 0.04rem 0.7rem;
     line-height: 2.5;
+    
 }
-li a:hover{
+ul a:hover{
     color: #F03667;
 }
-nav li a:active{
+nav ul a:active{
     border: 1px;
     border-radius: 100px;
     box-shadow:0 0 8px #F03667;
@@ -81,8 +76,12 @@ nav li a:active{
 .botonContacto{
     background-color: #F03667;
     color: #FFFF;
-    padding: 10px;
+    padding: 0px 30px;
     border-radius: 100px;
+}
+.botonContacto:hover{
+    opacity: 0.8;
+    color: #FFFF;
 }
 .sobreMi{
     width: 100%;
@@ -117,7 +116,7 @@ nav li a:active{
     border-radius: 100px;
     font-weight: 500;
 }
-.seccionConocimientos{
+#seccionConocimientos{
     background-color: #f6f7fb;
 }
 .titulo{
@@ -138,7 +137,7 @@ nav li a:active{
     margin-top: 20px;
     
 }
-.seccionFrase{
+#seccionFrase{
     background-color: #F03667;
 }
 .fraseIcono{
@@ -167,7 +166,7 @@ nav li a:active{
     margin-top: 20px;
 
 }
-.seccionContacto{
+#seccionContacto{
     background-color: #f6f7fb;
 }
 .contacto{
@@ -231,6 +230,9 @@ input, textarea{
 }
 .formNombre{
     margin-right: 10px;
+}
+button{
+    border: 0;
 }
 
 
