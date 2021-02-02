@@ -9,14 +9,6 @@
     width: 100%;
     max-width: 1100px;
 }
-section{
-    display: flex;
-    justify-content: center;
-    padding: 110px 40px 130px;
-}
-.letraBlanca{
-    color: white;
-}
 .letraColor{
     color: #F03667;
 }
@@ -25,14 +17,12 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .cajaFila{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
 }
 a{
     text-decoration: none;
@@ -45,7 +35,6 @@ header{
     width: 100%;
     background-color:#FFFF;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
-
 }
 nav ul{
     display: flex;
@@ -55,15 +44,12 @@ nav ul{
     list-style: none;
     align-items: center;
     padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-    
-   
+    padding-bottom: 0.5rem; 
 }
 nav ul a{
     margin-left: 1.2rem;
     padding: 0.04rem 0.7rem;
-    line-height: 2.5;
-    
+    line-height: 2.5;  
 }
 ul a:hover{
     color: #F03667;
@@ -76,13 +62,25 @@ nav ul a:active{
 .botonContacto{
     background-color: #F03667;
     color: #FFFF;
-    padding: 0px 30px;
+    padding: 0 1.875rem;
     border-radius: 100px;
 }
 .botonContacto:hover{
     opacity: 0.8;
     color: #FFFF;
 }
+body{
+    margin: 0;
+    
+}
+#seccionHola{
+    display: flex;
+    justify-content: center;
+    margin-top: 4.5rem;
+    padding-top: 9.7rem;
+    padding-bottom: 8.2rem;  
+}
+
 .sobreMi{
     width: 100%;
     max-width: 500px;
@@ -92,88 +90,119 @@ nav ul a:active{
     text-align: left;
 }
 .hola{
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-size: 1.875rem;
+    margin-bottom: 0.3rem;
     font-weight: 800;
 }
 .miNombre{
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 900;
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
 }
 .miDescripcion{
     color: #616161;
-    font-size: 16px;
-    margin-bottom: 40px;
+    font-size: 1rem;
+    margin-top: 1.1rem;
+    margin-bottom: 2.5rem;
 }
 .sobreMiImg{
-    width: 500px;
+    width: 45%;
 }
 .button{
     background-color: #F03667;
     color: #FFFF;
-    padding: 15px 40px;
+    padding: 0.94rem 2.5rem;
     border-radius: 100px;
     font-weight: 500;
 }
 #seccionConocimientos{
+    display: flex;
+    justify-content: center;
+    padding-top: 9.5rem;
+    padding-bottom: 8.2rem;
     background-color: #f6f7fb;
 }
 .titulo{
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: 900;
 }
+.descripcion{
+    width: 35%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
 .cards{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
     flex-wrap: wrap;
-    width: 820px;
+    justify-content: space-between; 
 }
 .itemConocimientos{
     color: #2e2e31;
     background-color: #fff;
     border: 1px solid #dddfe5;
     border-radius: 8px;
-    width: 260px;
-    height: 215px;
-    margin-top: 20px;
-    
+    width: 31.5%;
+    margin-top: 1.4rem;   
 }
 #seccionFrase{
+    display: flex;
+    justify-content: center;
+    padding-top: 6.5rem;
+    padding-bottom: 8.2rem;
     background-color: #F03667;
 }
 .fraseIcono{
     color: white;
     margin-bottom: 20px;
-    font-size: 80px;
+    font-size: 5.5rem;
 }
 .frase{
-    max-width: 800px;
+    color: white;
+    font-size: 1.2rem;
+    width: 75%;
     line-height: 1.4;
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
 }
 .autorFrase{
-    font-size: 27px;
+    color: white;
+    font-size: 1.7rem;
     font-weight: 900;
 }
+#seccionProyectos{
+    display: flex;
+    justify-content: center;
+    padding-top: 9.5rem;
+    padding-bottom: 8.2rem;
+}
 .cardsProyectos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     flex-wrap: wrap;
-    width: 1070px;
+    justify-content: space-between;
 }
 .itemProyecto{
-    width: 340px;
-    height: 350px;
+    width: 32%;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    margin-top: 20px;
-
+    margin-top: 1.4rem; 
 }
 #seccionContacto{
+    display: flex;
+    justify-content: center;
+    padding-top: 12.5rem;
+    padding-bottom: 8.2rem;
     background-color: #f6f7fb;
 }
 .contacto{
     display: flex;
     flex-direction: row;
     background-color: #ffffff;
-    padding: 80px 60px;
+    padding: 5rem 3.75rem;
     border-radius: 15px;
     border: 1px solid #e0e0e0;
     text-align: left;
@@ -181,55 +210,52 @@ nav ul a:active{
 .columnaContactame{
     width: 50%;
 }
-
+.columnaContactame p{
+    width: 80%;
+}
 .redes{
     display: flex;
     flex-direction: column;
     justify-content: left;
     justify-content: space-between;
-    margin-top: 40px;
-    height: 180px;
+    margin-top: 2.5rem;
     list-style: none;
-    padding: 0px;
+    padding: 0; 
 }
 .redSocialItem{
-    margin: 5px 0;
-}
-.redSocialLink{
-    padding: 5px 10px;
-    
+    margin-bottom: 1.8rem;
+    margin-left: 1rem;
 }
 .iconoRed{
     color: #F03667;
-    margin-right: 10px;
-    font-size: 20px;
+    margin-right: 0.8rem;
+    font-size: 1.3rem;
 
 }
 .columnaEscribime{
     width: 50%;
-    padding-left: 20px;
+    padding-left: 1.3rem;
 }
 label{
-    margin-bottom: 10px;
-    margin-top: 5px;
+    margin-bottom: 0.7rem;
+    margin-top: 0.8rem;
     font-weight: 600;
     display: block;
 }
 input, textarea{
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 20px;
     background-color: #f6f7fb;
     border: 1px solid #f6f7fb;
-    padding: 10px 15px;
+    padding: 0.8rem 1rem;
     width: 100%;
 
 }
 .formNombreApellido{
     display: flex;
-    margin-bottom: 15px;
 }
 .formNombre{
-    margin-right: 10px;
+    margin-right: 1.5rem;
 }
 button{
     border: 0;
