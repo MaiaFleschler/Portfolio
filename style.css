@@ -207,7 +207,46 @@ body{
     width: 32%;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    margin-top: 1.4rem; 
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.3rem;
+}
+.proyecto1{
+    width: 80%;
+    padding-top: 1rem;
+    padding-bottom: 6.4rem;
+}
+.proyecto2{
+    width: 70%;
+    padding-bottom: 6rem;
+}
+.proyecto3{
+    width: 60%;
+    padding-bottom: 4rem;
+}
+.proyecto4{
+    width: 60%;
+    padding-bottom: 5.2rem;
+}
+.proyecto5{
+    width: 70%;
+    padding-bottom: 4.5rem;
+}
+.proyecto6{
+    width: 70%;
+    padding-top: 0.8rem;
+    padding-bottom: 4.4rem;
+}
+.proyecto7{
+    width: 70%;
+    padding-bottom: 3rem;
+}
+.itemProyecto h3{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
 }
 #seccionContacto{
     display: flex;
