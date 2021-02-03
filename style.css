@@ -120,7 +120,7 @@ body{
     justify-content: center;
     padding-top: 9.5rem;
     padding-bottom: 8.2rem;
-    background-color: #f6f7fb;
+    background-color: #F2F2F2;
 }
 .titulo{
     font-size: 2.8rem;
@@ -138,14 +138,32 @@ body{
     flex-wrap: wrap;
     justify-content: space-between; 
 }
-.itemConocimientos{
+.cardConocimientos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #2e2e31;
     background-color: #fff;
     border: 1px solid #dddfe5;
     border-radius: 8px;
-    width: 31.5%;
-    margin-top: 1.4rem;   
+    width: 31.7%;
+    margin-top: 1.3rem;   
 }
+.cardConocimientos:hover{
+    border: 1px solid #F03667;
+}
+.cardConocimientos i{
+    font-size: 4.7rem;
+    padding-top: 3.3rem;
+    padding-bottom: 1.3rem;
+    
+}
+.cardConocimientos h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-bottom: 2.1rem;
+}
+
 #seccionFrase{
     display: flex;
     justify-content: center;
@@ -196,7 +214,7 @@ body{
     justify-content: center;
     padding-top: 12.5rem;
     padding-bottom: 8.2rem;
-    background-color: #f6f7fb;
+    background-color: #F2F2F2;
 }
 .contacto{
     display: flex;
