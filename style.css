@@ -248,6 +248,12 @@ body{
     font-weight: 600;
     padding-bottom: 2rem;
 }
+.itemProyecto:hover{
+    border: 1px solid #F03667;
+}
+.itemProyecto:active{
+    box-shadow:0 0 8px #F03667;
+}
 #seccionContacto{
     display: flex;
     justify-content: center;
