@@ -288,13 +288,16 @@ header nav ul a:active{
     margin-left: 0.8rem;
     margin-bottom: 0.8rem;
 }
+.redSocialItem a:hover{
+    color: #F03667;
+}
 .iconoRed{
     color: #F03667;
     margin-right: 0.8rem;
     font-size: 1.3rem;
     padding: 0.5rem;
 }
-.iconoRed:hover{
+.redSocialItem:hover .iconoRed{
     background-color: #F03667;
     border-radius:50%;
     color: #FFFF;
@@ -360,6 +363,10 @@ footer nav ul a{
     color: white;
     font-size: 0.9rem;
     margin-left: 0.8rem;
+}
+footer nav ul a:active{
+    font-size: 1rem;
+    font-weight: 700;
 }
 .redesSocialesFooter{
     display: flex;
