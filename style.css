@@ -286,18 +286,26 @@ body{
     padding: 0; 
 }
 .redSocialItem{
-    margin-bottom: 1.8rem;
-    margin-left: 1rem;
+    margin-left: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 .iconoRed{
     color: #F03667;
     margin-right: 0.8rem;
     font-size: 1.3rem;
-
+    padding: 0.5rem;
+}
+.iconoRed:hover{
+    background-color: #F03667;
+    border-radius:50%;
+    color: #FFFF;
 }
 .columnaEscribime{
     width: 50%;
     padding-left: 1.3rem;
+}
+form{
+    margin-top: -1rem;
 }
 label{
     margin-bottom: 0.7rem;
@@ -306,14 +314,25 @@ label{
     display: block;
 }
 input, textarea{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     border-radius: 20px;
-    background-color: #f6f7fb;
+    background-color: #f1f1f1;
     border: 1px solid #f6f7fb;
-    padding: 0.8rem 1rem;
+    padding: 0.7rem 1rem;
     width: 100%;
+    outline:none;
 
 }
+input:focus{
+    border: 1px #F03667;
+    box-shadow:0 0 8px #F03667;  
+}
+textarea:focus{
+    border: 1px #F03667;
+    box-shadow:0 0 8px #F03667;
+}
+
 .formNombreApellido{
     display: flex;
 }
@@ -322,6 +341,16 @@ input, textarea{
 }
 button{
     border: 0;
+    outline: none;
+    margin-top: 1rem;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+button:active{
+    box-shadow:0 0 8px #F03667;
+    opacity: 1;
 }
 
 
