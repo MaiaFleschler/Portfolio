@@ -21,12 +21,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-.cajaFila{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 a{
     text-decoration: none;
     color: #2e2e31;
@@ -79,7 +73,12 @@ header nav ul a:active{
     padding-top: 9.7rem;
     padding-bottom: 8.2rem;  
 }
-
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 .sobreMi{
     width: 100%;
     max-width: 500px;
@@ -124,18 +123,21 @@ header nav ul a:active{
 .titulo{
     font-size: 2.8rem;
     font-weight: 900;
+    text-align: center;
+    padding: 0 1rem;
 }
 .descripcion{
-    width: 35%;
+    width: 25rem;
     text-align: center;
     margin-bottom: 2.5rem;
+    padding: 0 1rem;
 }
 .cards{
     display: flex;
     flex-direction: row;
-    width: 75%;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: center;
+    
 }
 .cardConocimientos{
     display: flex;
@@ -145,9 +147,12 @@ header nav ul a:active{
     background-color: #fff;
     border: 1px solid #dddfe5;
     border-radius: 8px;
-    width: 31.7%;
-    margin-top: 1.3rem;   
+    width: 260px;
+    margin-top: 1.3rem; 
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;  
 }
+
 .cardConocimientos:hover{
     border: 1px solid #F03667;
 }
@@ -246,6 +251,7 @@ header nav ul a:active{
     font-size: 1rem;
     font-weight: 600;
     padding-bottom: 2rem;
+    text-align: center;
 }
 .itemProyecto:hover{
     border: 1px solid #F03667;
@@ -269,6 +275,11 @@ header nav ul a:active{
     border: 1px solid #e0e0e0;
     text-align: left;
 }
+.tituloContacto{
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-align: left;
+}
 .columnaContactame{
     width: 50%;
 }
@@ -290,6 +301,10 @@ header nav ul a:active{
 }
 .redSocialItem a:hover{
     color: #F03667;
+}
+.redSocialLink{
+    display: flex;
+    align-items: center;
 }
 .iconoRed{
     color: #F03667;
@@ -357,7 +372,7 @@ button:active{
 footer{
     background-color: #F03667;
     padding-top: 4.5rem;
-    padding-right: 1.5rem;
+    padding-right: 3.5rem;
 }
 footer nav ul a{
     color: white;
@@ -394,7 +409,172 @@ footer p{
     color: white;
     margin-bottom: 4rem;
     margin-left: 3.8rem;
+    text-align: center;
 }
+@media screen and (max-width: 1100px){
+    header{
+        display: none;
+    }
+    #seccionHola{
+        padding-bottom: 10.2rem;
+        margin-top: 3.2rem;
+    }
+    .presentacion{
+        flex-direction: column;
+    }
+    .sobreMi{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .sobreMiImg{
+        width: 470px;
+    }
+    .cardsProyectos{
+        width: 90%;
+    }
+    .contacto{
+        width: 92%;
+    }
+}
+@media screen and (max-width: 900px){
+    .itemProyecto{
+        width: 48%;
+    }
+    .columnaContactame{
+        width: 100%;
+    }
+    .columnaContactame p{
+        width: 370px;
+    }
+    #seccionContacto{
+        padding: 0;
+    }
+    .contacto{
+        border: none;
+        width: 100%;
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 2.5rem;
+    }
+    .redes{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .redSocialItem{
+        width: 45%;
+    }
+    .columnaEscribime{
+        width: 100%;
+        margin-top: 2rem;
+        padding-left: 0rem;
+    }
+    .formNombre{
+        width: 50%;
+    }
+    .formApellido{
+        width: 50%;
+    }
+    button{
+        margin-bottom: 6rem;
+    }
+}
+@media screen and (max-width: 576px){
+    #seccionHola{
+        margin-top: 1.5rem;
+    }
+    .miNombre{
+        font-size: 3rem;
+        padding: 0 1rem;
+    }
+    .miDescripcion{
+        padding: 0 1rem;
+    }
+    .sobreMiImg{
+        width: 85%;
+    }
+    .titulo{
+        font-size: 2.2rem;
+    }
+    .descripcion{
+        width: 80%;
+    }
+    .cards{
+        width: 95%;
+    }
+    .cardConocimientos{
+        width: 45%;
+    }
+    .cardConocimientos i{
+        font-size: 3.7rem;
+        padding-top: 2.7rem;
+        padding-bottom: 1.3rem; 
+    }
+    .cardConocimientos h3{
+        font-size: 1rem;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+    }
+    .cardsProyectos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .itemProyecto{
+        width: 95%;
+    }
+    #seccionFrase{
+        padding-top: 5.5rem;
+        padding-bottom: 3rem;
+    }
+    .fraseIcono{
+        margin-bottom: 1rem;
+        font-size: 5rem;
+    }
+    .frase{
+        font-size: 1rem;
+        width: 75%;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    .contacto{
+        flex-direction: column;
+        padding-left: 1.5rem;
+    }
+    .columnaContactame p{
+        width: 90%;
+    }
+    .redes{
+        flex-direction: column;
+    }
+    .formNombreApellido{
+        flex-direction: column;
+    }
+    .formNombre{
+        width: 100%;
+    }
+    .formApellido{
+        width: 100%;
+    }
+    button{
+        margin-bottom: 1rem;
+    }
+    footer{
+        padding-top: 3rem;
+    }
+    footer nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 360px){
+    .cardConocimientos{
+        width: 70%;
+    }
+    
+}
+
 
 
 
