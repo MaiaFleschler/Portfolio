@@ -32,6 +32,7 @@ header{
     width: 100%;
     background-color:#FFFF;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+    z-index: 2;
 }
 header nav ul{
     display: flex;
@@ -69,7 +70,6 @@ header nav ul a:active{
 #seccionHola{
     display: flex;
     justify-content: center;
-    margin-top: 4.5rem;
     padding-top: 9.7rem;
     padding-bottom: 8.2rem;  
 }
@@ -155,6 +155,9 @@ header nav ul a:active{
 
 .cardConocimientos:hover{
     border: 1px solid #F03667;
+}
+.cardConocimientos:hover h3{
+    color: #F03667;
 }
 .cardConocimientos i{
     font-size: 4.7rem;
@@ -256,6 +259,9 @@ header nav ul a:active{
 .itemProyecto:hover{
     border: 1px solid #F03667;
 }
+.itemProyecto:hover h3{
+    color: #F03667;
+}
 .itemProyecto:active{
     box-shadow:0 0 8px #F03667;
 }
@@ -296,6 +302,7 @@ header nav ul a:active{
     padding: 0; 
 }
 .redSocialItem{
+    width: 10%;
     margin-left: 0.8rem;
     margin-bottom: 0.8rem;
 }
@@ -323,6 +330,7 @@ header nav ul a:active{
 }
 form{
     margin-top: -1rem;
+    z-index: 1;
 }
 label{
     margin-bottom: 0.7rem;
@@ -341,25 +349,71 @@ input, textarea{
     outline:none;
 
 }
-input:focus{
-    border: 1px #F03667;
-    box-shadow:0 0 8px #F03667;  
-}
-textarea:focus{
-    border: 1px #F03667;
-    box-shadow:0 0 8px #F03667;
-}
-
 .formNombreApellido{
     display: flex;
+    width: 90%;
 }
 .formNombre{
     margin-right: 1.5rem;
+    position: relative;
+    
 }
+.formApellido{
+    position: relative;
+    width: 90%;
+}
+.formEmail{
+    position: relative;
+    width: 90%;
+}
+.formTexto{
+    position: relative;
+    width: 90%;
+}
+.form_input:placeholder-shown:focus{
+    border: 1px #F03667;
+    box-shadow:0 0 8px #F03667;  
+}
+.form_input:valid:not(:placeholder-shown):focus{
+    border: 1px #88c459;
+    box-shadow:0 0 8px #88c459;  
+}
+.form_input:valid:not(:placeholder-shown){
+    border: 1px solid #88c459; 
+}
+.form_input:invalid:not(:placeholder-shown):focus{
+    border: 1px #f5414f;
+    box-shadow:0 0 8px #f5414f;  
+}
+.form_input:invalid:not(:placeholder-shown){
+    border: 1px solid #f5414f; 
+}
+.icon-invalid,
+.icon-valid {
+    display: none;
+    position: absolute;
+    bottom: 0.8rem;
+    right: 20px;
+}
+  
+.icon-valid {
+    color: #88c459;
+}
+  
+.icon-invalid {
+    color: #f5414f;
+}
+  
+.form_input:valid ~ .icon-valid,
+.form_input:not(:placeholder-shown):invalid ~ .icon-invalid {
+    display: block;
+}
+  
 button{
     border: 0;
     outline: none;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 button:hover{
     opacity: 0.8;
@@ -445,7 +499,7 @@ footer p{
         width: 100%;
     }
     .columnaContactame p{
-        width: 370px;
+        width: 90%;
     }
     #seccionContacto{
         padding: 0;
@@ -466,6 +520,9 @@ footer p{
     }
     .redSocialItem{
         width: 45%;
+    }
+    .redSocialLink{
+        width: 10%;
     }
     .columnaEscribime{
         width: 100%;

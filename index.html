@@ -152,32 +152,41 @@
                         <div class="formNombre">
                         <label for="idNombre">Nombre *</label>
                         <input type="text" name="nombre" id="idNombre"
+                        class="form_input"
                         placeholder="p. ej.: Ada" 
                         aria-label="Nombre"
                         required>
+                        <i class="fa fa-check-circle icon-valid" aria-hidden="true"></i>
                         </div>
                         <div class="formApellido">
                         <label for="idApellido">Apellido *</label>
                         <input type="text" name="apellido" id="idApellido"
+                        class="form_input"
                         placeholder="p. ej.: Lovelace" 
                         aria-label="Apellido"
                         required>
+                        <i class="fa fa-check-circle icon-valid" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="formEmail">
                         <label for="idEmail">Email *</label>
-                        <input type="email" name="email" id="idEmail" 
+                        <input type="email"  
+                        class="form_input"
                         placeholder="p. ej.: ada.lovelace@gmail.com"
                         aria-label="Email"
                         required>
+                        <i class="fa fa-exclamation-circle icon-invalid" aria-hidden="true"></i>
+                        <i class="fa fa-check-circle icon-valid" aria-hidden="true"></i>
                     </div>
                     <div class="formTexto">
                         <label for="idMensaje">Mensaje *</label>
                         <textarea name="mensaje" id="idMensaje" 
+                        class="form_input"
                         cols="30" rows="9"
                         placeholder="Escriba un mensaje aquí"
                         aria-label="Mensaje"
                         required></textarea>
+                        <i class="fa fa-check-circle icon-valid" aria-hidden="true"></i>
                     </div>
                     <button class="button">ENVIAR</button>
 
