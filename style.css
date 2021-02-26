@@ -302,16 +302,16 @@ header nav ul a:active{
     padding: 0; 
 }
 .redSocialItem{
-    width: 10%;
     margin-left: 0.8rem;
     margin-bottom: 0.8rem;
 }
-.redSocialItem a:hover{
+.redSocialLink:hover{
     color: #F03667;
 }
 .redSocialLink{
     display: flex;
     align-items: center;
+    width: fit-content;
 }
 .iconoRed{
     color: #F03667;
@@ -319,7 +319,7 @@ header nav ul a:active{
     font-size: 1.3rem;
     padding: 0.5rem;
 }
-.redSocialItem:hover .iconoRed{
+.redSocialLink:hover .iconoRed{
     background-color: #F03667;
     border-radius:50%;
     color: #FFFF;
@@ -351,24 +351,22 @@ input, textarea{
 }
 .formNombreApellido{
     display: flex;
-    width: 90%;
+    width: 95%;
 }
 .formNombre{
     margin-right: 1.5rem;
     position: relative;
-    
 }
 .formApellido{
     position: relative;
-    width: 90%;
 }
 .formEmail{
     position: relative;
-    width: 90%;
+    width: 95%;
 }
 .formTexto{
     position: relative;
-    width: 90%;
+    width: 95%;
 }
 .form_input:placeholder-shown:focus{
     border: 1px #F03667;
